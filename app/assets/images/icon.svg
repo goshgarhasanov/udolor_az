@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background gradient: deep indigo → near-black -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#1f1b4d"/>
+      <stop offset="55%" stop-color="#0f0d2c"/>
+      <stop offset="100%" stop-color="#08071a"/>
+    </linearGradient>
+
+    <!-- Play triangle gradient: indigo → cyan -->
+    <linearGradient id="play" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#a5aef9"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <!-- Arrow gradient -->
+    <linearGradient id="arrow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <!-- Soft glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Inner shine -->
+    <radialGradient id="shine" cx="30%" cy="20%" r="70%">
+      <stop offset="0%"  stop-color="rgba(165,174,249,0.20)"/>
+      <stop offset="100%" stop-color="rgba(165,174,249,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded-square base -->
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#bg)"/>
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#shine)"/>
+
+  <!-- Subtle inner border -->
+  <rect x="2" y="2" width="508" height="508" rx="110" ry="110" fill="none"
+        stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+
+  <!-- Glow halo behind play -->
+  <circle cx="256" cy="216" r="90" fill="rgba(129,140,248,0.30)" filter="url(#glow)"/>
+
+  <!-- Play triangle (slightly rounded) -->
+  <g filter="url(#glow)" opacity="0.55">
+    <path d="M 200 156 L 320 216 L 200 276 Z"
+          fill="url(#play)"/>
+  </g>
+  <path d="M 204 160
+           L 316 214
+           Q 322 217 322 220
+           Q 322 223 316 226
+           L 204 280
+           Q 198 283 195 280
+           Q 192 277 192 270
+           L 192 168
+           Q 192 161 195 158
+           Q 198 155 204 160 Z"
+        fill="url(#play)"/>
+
+  <!-- Download arrow (shaft + head) below play -->
+  <g>
+    <!-- shaft -->
+    <rect x="240" y="306" width="32" height="76" rx="14" fill="url(#arrow)"/>
+    <!-- arrow head (rounded triangle) -->
+    <path d="M 196 372
+             L 316 372
+             Q 326 372 320 380
+             L 264 446
+             Q 256 454 248 446
+             L 192 380
+             Q 186 372 196 372 Z"
+          fill="url(#arrow)"/>
+  </g>
+
+  <!-- Tiny accent dots (cyan) for richness -->
+  <circle cx="120" cy="120" r="4"  fill="rgba(34,211,238,0.45)"/>
+  <circle cx="396" cy="138" r="3"  fill="rgba(165,174,249,0.55)"/>
+  <circle cx="412" cy="396" r="3"  fill="rgba(34,211,238,0.40)"/>
+  <circle cx="116" cy="392" r="4"  fill="rgba(129,140,248,0.40)"/>
+</svg>
