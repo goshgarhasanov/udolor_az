@@ -124,9 +124,9 @@ function createWindow() {
             ]
         },
         {
-            label: 'Dəstək ol',
+            label: 'Dəstək ol ☕',
             click: () => {
-                shell.openExternal(urlDonateWithMsg(vars.urlDonate))
+                shell.openExternal(vars.urlDonate)
             }
         }
     ];
@@ -203,6 +203,3 @@ ipcMain.on("quitApp", function () {
 });
 
 
-function urlDonateWithMsg(baseUrl) {
-    return `${baseUrl}&item_name=${("Udeler is free and without any ads. If you appreciate that, please consider donating to the Developer.").replace(" ", "+")}`
-}

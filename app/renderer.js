@@ -43,5 +43,5 @@ function translateWrite(text) {
 }
 
 function urlDonate() {
-	return `${pkgVars.urlDonate}&item_name=${translate("Udeler is free and without any ads. If you appreciate that, please consider donating to the Developer.").replace(" ", "+")}`;
+	return pkgVars.urlDonate;
 }

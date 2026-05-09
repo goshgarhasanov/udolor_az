@@ -1036,6 +1036,74 @@ body .dialog-widget.background {
   transform: scale(1.03);
 }
 
+/* kofe.al donate button */
+.kofe-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  margin: 12px auto 4px;
+  max-width: 360px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #ffb347 0%, #ff7ad9 50%, #8b6dff 100%);
+  color: #0b1024 !important;
+  text-decoration: none;
+  box-shadow: 0 14px 40px rgba(255, 122, 217, 0.32);
+  transition: transform var(--t-fast) var(--ease),
+              box-shadow var(--t-fast) var(--ease),
+              filter var(--t-fast) var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.kofe-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 700ms var(--ease);
+}
+.kofe-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 20px 56px rgba(255, 122, 217, 0.48);
+  filter: brightness(1.05) saturate(1.1);
+  color: #0b1024 !important;
+}
+.kofe-button:hover::before {
+  transform: translateX(100%);
+}
+.kofe-button:active {
+  transform: translateY(-1px) scale(1);
+}
+.kofe-emoji {
+  font-size: 36px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+  animation: steam 2.6s ease-in-out infinite;
+}
+@keyframes steam {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-2px) rotate(-3deg); }
+}
+.kofe-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.kofe-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0b1024;
+}
+.kofe-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(11, 16, 36, 0.7);
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
 /* Login extra polish */
 .how-get-token {
   display: block;
