@@ -107,21 +107,9 @@ function createWindow() {
         },
         {
             label: 'GitHub repozitoriyası',
-            submenu: [
-                {
-                    label: 'Bu versiya',
-                    click: () => {
-                        shell.openExternal('https://github.com/goshgarhasanov/udolor_az/releases')
-                    }
-                },
-                { type: "separator" },
-                {
-                    label: 'Orijinal (arxivləşdirilmiş)',
-                    click: () => {
-                        shell.openExternal('https://github.com/FaisalUmair/udemy-downloader-gui/releases')
-                    }
-                }
-            ]
+            click: () => {
+                shell.openExternal('https://github.com/goshgarhasanov/udolor_az')
+            }
         },
         {
             label: 'Dəstək ol ☕',

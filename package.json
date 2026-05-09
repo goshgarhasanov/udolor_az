@@ -6,8 +6,8 @@
   "main": "main.js",
   "type": "commonjs",
   "vars": {
-    "urlHelp": "https://heliomarpm.notion.site/heliomarpm/How-to-get-an-Access-Token-b0ce5f89073c4965b47721197dcb2497",
-    "urlToggles": "https://raw.githubusercontent.com/heliomarpm/feature_toggles/main/udemy-downloader-gui.json",
+    "urlHelp": "https://github.com/goshgarhasanov/udolor_az#-necə-istifadə-etməli",
+    "urlToggles": "",
     "urlDonate": "https://kofe.al/@goshgarhasanov"
   },
   "repository": {

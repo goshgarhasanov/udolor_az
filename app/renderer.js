@@ -6,14 +6,15 @@ const { version: appVersion, vars: pkgVars } = require("../package.json");
 
 let featToggle = {};
 
-if (!process.env.DEBUG_MODE) {
+if (!process.env.DEBUG_MODE && pkgVars.urlToggles) {
 	fetch(pkgVars.urlToggles)
 		.then((resp) => resp.json())
 		.then((json) => {
 			featToggle = json;
 			Sentry.init({ dsn: featToggle.enableSentry ? process.env.SENTRY_DSN : "" });
 			console.log(featToggle.enableSentry ? "Sentry is enabled" : "Sentry is disabled");
-		});
+		})
+		.catch(() => {});
 }
 
 const localeMeta = require("./locale/meta.json");

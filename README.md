@@ -20,9 +20,7 @@
 
 ## 🌟 Bir baxışda
 
-**Udolor AZ** — qeydiyyatdan keçdiyiniz Udemy kurslarını rahat şəkildə yükləməyə imkan verən masaüstü tətbiqidir. Glassmorphism üslubunda tünd qradient interfeys, neon vurğular və yumşaq animasiyalarla təqdim olunur. Tam Azərbaycan dilində, qrammatik baxımdan diqqətlə yoxlanılmış mətnlərlə.
-
-> Bu layihə [heliomarpm/udemy-downloader-gui](https://github.com/heliomarpm/udemy-downloader-gui) layihəsinin Azərbaycan dilinə uyğunlaşdırılmış və tamamilə yenidən dizayn olunmuş versiyasıdır.
+**Udolor AZ** — qeydiyyatdan keçdiyiniz Udemy kurslarını rahat şəkildə yükləməyə imkan verən masaüstü tətbiqidir. Müasir tünd interfeys, dəqiq tipoqrafiya və yumşaq mikro-animasiyalarla təqdim olunur. Tam Azərbaycan dilində, qrammatik baxımdan diqqətlə yoxlanılmış mətnlərlə.
 
 ---
 
@@ -179,15 +177,27 @@ Töhfələriniz bizim üçün dəyərlidir!
 
 ---
 
-## 📜 Lisenziya
+## ☕ Layihəni dəstəkləmək
+
+Layihə sizə xeyirli olubsa və bir qəhvə qədər dəyər verirsinizsə:
+
+<p align="center">
+  <a href="https://kofe.al/@goshgarhasanov">
+    <img src="https://img.shields.io/badge/☕-Bir%20qəhvə%20al-ff7ad9?style=for-the-badge&labelColor=0b1024" alt="Dəstək ol" />
+  </a>
+</p>
+
+---
+
+## 📜 Lisenziya və müəllif
 
 Bu layihə **ISC** lisenziyası altında paylaşılır.
 
 | Rol | Müəllif |
 | --- | --- |
-| Orijinal layihə | [@FaisalUmair](https://github.com/FaisalUmair) — *udemy-downloader-gui (arxivləşdirilmiş)* |
-| Davam etdirən | [@heliomarpm](https://github.com/heliomarpm) — *udemy-downloader-gui* |
-| Azərbaycan adaptasiyası | [@goshgarhasanov](https://github.com/goshgarhasanov) — *udolor_az* |
+| Müəllif və tərtibatçı | [@goshgarhasanov](https://github.com/goshgarhasanov) |
+| Layihə | [udolor_az](https://github.com/goshgarhasanov/udolor_az) |
+| Dəstək | [kofe.al/@goshgarhasanov](https://kofe.al/@goshgarhasanov) |
 
 ---
 

@@ -100,17 +100,7 @@ $(".ui.dashboard .content").on("click", ".open-dir", function () {
 	shell.openPath(pathDownloaded);
 });
 
-$(".ui.dashboard .content").on("click", ".check-updates", () => checkUpdate("heliomarpm"));
-
-$(".ui.dashboard .content").on("click", ".check-updates-original", () => checkUpdate("FaisalUmair"));
-
-$(".ui.dashboard .content").on("click", ".old-version-mac", () => {
-	shell.openExternal("https://github.com/FaisalUmair/udemy-downloader-gui/releases/download/v1.8.2/Udeler-1.8.2-mac.dmg");
-});
-
-$(".ui.dashboard .content").on("click", ".old-version-linux", () => {
-	shell.openExternal("https://github.com/FaisalUmair/udemy-downloader-gui/releases/download/v1.8.2/Udeler-1.8.2-linux-x86_x64.AppImage");
-});
+$(".ui.dashboard .content").on("click", ".check-updates", () => checkUpdate("goshgarhasanov"));
 
 $(".ui.dashboard .content").on("click", ".download-success, .course-encrypted", function () {
 	$(this).hide();
@@ -263,7 +253,7 @@ async function checkUpdate(account, silent = false) {
 	ui.busyCheckUpdate(true);
 
 	try {
-		const response = await fetch(`https://api.github.com/repos/${account}/udemy-downloader-gui/releases/latest`);
+		const response = await fetch(`https://api.github.com/repos/${account}/udolor_az/releases/latest`);
 
 		if (!response.ok) {
 			throw new Error(`Failed to check for updates: ${response.status}`);
@@ -311,7 +301,7 @@ async function checkLogin(alertExpired = true) {
 			});
 
 			if (Settings.download.checkNewVersion) {
-				checkUpdate("heliomarpm", true);
+				checkUpdate("goshgarhasanov", true);
 			}
 		} catch (error) {
 			console.error("Failed to fetch user profile", error);
@@ -1912,8 +1902,8 @@ function saveLogFile() {
 
 	dialog
 		.showSaveDialog({
-			title: "Udeler Log",
-			defaultPath: "udeler_logger.txt",
+			title: "Udolor AZ Log",
+			defaultPath: "udolor_az_logger.txt",
 			filters: [{ name: "Text File (*.txt)", fileExtension: ["txt"] }],
 		})
 		.then((result) => {

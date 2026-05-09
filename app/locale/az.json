@@ -101,12 +101,12 @@
   "Enumerate download with zero left": "Yükləməni soldan sıfırla nömrələ",
   "Old version": "Köhnə versiya",
   "Using Password": "Şifrə ilə",
-  "Get Credentials": "Etibarnaməni al",
+  "Get Credentials": "Udemy ilə daxil ol",
   "Note: When the selected option is not available in the Udemy API, the highest quality available will be downloaded.": "Qeyd: Seçilən variant Udemy API-də mövcud deyilsə, mövcud olan ən yüksək keyfiyyət yüklənəcək.",
-  "How to get an Access Token": "Giriş tokenini necə əldə etməli",
-  "Access Token": "Giriş tokeni",
+  "How to get an Access Token": "Giriş tokenini necə əldə etmək olar",
+  "Access Token": "Giriş tokeni ilə",
   "Subscriber Account": "Abunə hesabı",
-  "Saving download history": "Yükləmə tarixçəsi yadda saxlanılır",
+  "Saving download history": "Yükləmə tarixçəsi saxlanılır",
   "Service is temporarily unavailable. Please wait a few minutes and try again.": "Xidmət müvəqqəti olaraq əlçatan deyil. Zəhmət olmasa bir neçə dəqiqədən sonra yenidən cəhd edin.",
   "Udeler Logger": "Udolor jurnalı"
 }

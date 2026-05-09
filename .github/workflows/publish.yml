@@ -52,7 +52,7 @@ jobs:
         run: npm install dmg-license
 
       - name: Build Electron App
-        uses: heliomarpm/action-electron-builder@2.1
+        uses: samuelmeuli/action-electron-builder@v1
         with:
           max_attempts: 3
           github_token: ${{ secrets.github_token }}
@@ -60,7 +60,7 @@ jobs:
 
       - name: Build Electron App Win32
         if: startsWith(matrix.os, 'windows-latest')
-        uses: heliomarpm/action-electron-builder@2.1
+        uses: samuelmeuli/action-electron-builder@v1
         with:
           args: --ia32
           max_attempts: 3

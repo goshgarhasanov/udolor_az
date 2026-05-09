@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before submitting, please make sure to [search for existing issues](https://github.com/heliomarpm/udemy-downloader-gui/issues) to avoid duplicates!
+        Before submitting, please make sure to [search for existing issues](https://github.com/goshgarhasanov/udolor_az/issues) to avoid duplicates!
 
   - type: input
     attributes:
